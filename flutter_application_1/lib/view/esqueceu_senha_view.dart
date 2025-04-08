@@ -14,7 +14,6 @@ class _EsqueceuSenhaViewState extends State<EsqueceuSenhaView> {
   void _recuperarSenha() {
     if (_formKey.currentState!.validate()) {
       final email = _emailController.text;
-      // Aqui entraria lógica para enviar email (mock)
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Instruções enviadas para $email')),
       );
